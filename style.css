@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    margin: 0;
+}
+.timer-container {
+    background: rgba(255,255,255,0.85);
+    padding: 48px 72px;
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(102,166,255,0.18);
+    text-align: center;
+    border: 2px solid #fbc2eb;
+}
+#timer {
+    font-size: 5rem; /* 숫자 크기 크게 */
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0 2px 8px #66a6ff, 0 0px 32px #89f7fe;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #66a6ff 0%, #fbc2eb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.progress-bar-container {
+    width: 100%;
+    background: #e0e7ff;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(102,166,255,0.15);
+    height: 24px;
+    overflow: hidden;
+}
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #66a6ff 0%, #fbc2eb 100%);
+    border-radius: 10px;
+    transition: width 0.3s;
+    box-shadow: 0 2px 8px rgba(102,166,255,0.25);
+}
+.buttons button {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #66a6ff 0%, #fbc2eb 100%);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(102,166,255,0.15);
+}
+.buttons button:hover {
+    background: linear-gradient(90deg, #fbc2eb 0%, #66a6ff 100%);
+    color: #333;
+    box-shadow: 0 4px 16px rgba(102,166,255,0.25);
+}
